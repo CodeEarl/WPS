@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="all">
+      <header class="navbar">
+        <div class="logo">
+          <img src="/wppusher-logo copy.png" alt="Logo" />
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <nav class="nav-links">
+          <a href="#">Download</a>
+          <a href="#">Learn more</a>
+          <a href="#">Pricing</a>
+          <a href="#">Help</a>
+          <button class="account-button">Account</button>
+        </nav>
+      </header>
+
+      <hr />
+
+        <section class="both">
+            <section class="main">
+                <h1>Checkout</h1>
+    
+                <hr>
+                <form action="#">
+                <div class="one">
+                    <div class="flex">
+                    <div class="number">
+                        <p>1</p>
+                    </div>
+                    <h3>Your Basic Information</h3>
+                    </div>
+    
+                    <div class="group flex">
+                    <div class="one">
+                        <label for="fname">First Name</label>
+                        <input
+                        type="text"
+                        id="fname"
+                        name="fname"
+                        required
+                        placeholder="Jane"
+                        />
+                    </div>
+    
+                    <div class="one">
+                        <label for="lname">Last Name</label>
+                        <input
+                        type="text"
+                        id="lname"
+                        name="lname"
+                        required
+                        placeholder="Doe"
+                        />
+                    </div>
+                    </div>
+    
+                    <div class="box">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="janedoe@example.com"
+                    />
+                    </div>
+                </div>
+
+                <hr>
+    
+                <div class="two">
+                    <div class="flex">
+                        <div class="number">
+                            <p>2</p>
+                        </div>
+                        <h3>Your Payment Information</h3>
+                    </div>
+    
+                    <div class="box">
+                        <label for="card">Credit Card</label>
+                        <input
+                            type="text"
+                            id="card"
+                            name="card"
+                            required
+                            placeholder="1234 5678 9012 3456"
+                        />
+                    </div>
+                </div>
+    
+                <button type="submit">Buy WP Pusher</button>
+                </form>
+    
+                <div class="support flex">
+                    <img src="/Mask.png"alt="" />
+                    <p>
+                        <b>Need any help?</b> Don’t hesitate
+                        to contact support!
+                    </p>
+                </div>
+    
+                <div class="last">
+                <img src="/Shape.png" alt="" />
+                </div>
+            </section>
+    
+            <aside>
+                <div class="plan">
+                    <h2>Freelancer</h2>
+                    <h3><sup>$</sup> <span>99</span> / year</h3>
+                    <p>Automatically renews after one year.</p>
+                </div>
+    
+                <ul class="details">
+                <li>
+                    <img src="/Combined Shape Copy 2.png" alt="" /> Use on 5 client
+                    sites
+                </li>
+                <li>
+                    <img src="/Combined Shape Copy 2.png" alt="" /> Private repositories
+                </li>
+                <li><img src="/Combined Shape Copy 2.png" alt="" /> Email support</li>
+                </ul>
+    
+                <div class="switch">
+                <p>Need 20 client sites?</p>
+                <h4>Switch to the <i>Agency</i> plan.</h4>
+                </div>
+    
+                <hr />
+    
+                <div class="testimonial">
+                <p>
+                    FTP is horrible to deal with. <b>WP Pusher</b> solves that issue, and the
+                    customer support is awesome!
+                </p>
+    
+                <div class="flex">
+                    <img src="/Bitmap.png" alt="" />
+                    <h4>Kirk Beard</h4>
+                </div>
+                </div>
+            </aside>
+        </section>
+    </section>
+
+
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
